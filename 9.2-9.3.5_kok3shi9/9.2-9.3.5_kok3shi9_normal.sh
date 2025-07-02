@@ -3,7 +3,7 @@
 cd / && rm -rf ./--early-boot .cydia_no_stash .installed_kok3shi User boot lib mnt untether
 cd /Applications && rm -rf Cydia.app Filza.app MTerminal.app SpringtomizeApp.app
 cd /Library && rm -rf Frameworks LaunchDaemons MobileSubstrate PreferenceBundles PreferenceLoader Switches
-cd /System/Library && rm -rf "Internet Plug-Ins" KeyboardDictionaries
+cd /System/Library && rm -rf "Internet Plug-Ins" KeyboardDictionaries PreferenceBundles/AppList.bundle
 cd /private/etc && rm -rf alternatives apt default dpkg pam.d profile profile.d rc.d ssh ssl
 cd /sbin && rm -rf clri dmesg dump dumpfs dynamic_pager fstyp_msdos fstyp_ntfs fstyp_udf fstyp_ufs halt mount_cd9660 mount_devfs mount_fdesc mount_kernfs mount_null mount_procfs mount_synthfs mount_union newfs nologin quotacheck reboot restore tunefs umount
 cd /usr && rm -rf games include local/bin local/lib
