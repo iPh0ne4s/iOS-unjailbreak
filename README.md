@@ -8,4 +8,4 @@
   - Use [Legacy-iOS-Kit](https://github.com/LukeZGD/Legacy-iOS-Kit) or [SSHRD_Script](https://github.com/verygenericname/SSHRD_Script) to boot SSH ramdisk and SSH into device
   - Open another terminal, run `sshpass -p alpine ssh root@127.0.0.1 -p2222 -o StrictHostKeyChecking=no "dd if=/dev/disk0s1s1 bs=64k | gzip -1 -" | dd of=disk0s1s1.gz bs=64k` to dump /dev/disk0s1s1 on device. Requires sshpass installed. To restore /dev/disk0s1s1, run `dd if=disk0s1s1.gz bs=64k | sshpass -p alpine ssh root@127.0.0.1 -p2222 -o StrictHostKeyChecking=no "gzip -d | dd of=/dev/disk0s1s1 bs=64k"`
   - 2222 is the port of SSHRD_Script, while Legacy-iOS-Kit uses 6414
-  - On 10.3+ there will be permission denied error, dump /dev/disk0 instead
+  - On 10.3+ there will be permission denied error, dump /dev/disk0 instead, or boot SSH ramdisk and SSH into device, run `/sbin/mount_apfs /dev/disk0s1s1 /mnt1 && snaputil -c orig-fs /mnt1` to create a rootFS snapshot. For more details, type `snaputil` in SSH ramdisk mode
