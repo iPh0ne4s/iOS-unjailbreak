@@ -1,7 +1,7 @@
 # Tested on iPhone 5s (10.3.3) with TotallyNotSpyware jailbreak and Meridian option, run this script on SSH ramdisk mode
 # Might work on 10.0-10.2.1, untested
 
-cd /mnt1 && rm -rf lib meridian mnt User .DS_Store ._.DS_Store .cydia_no_stash .meridian_installed
+cd /mnt1 && rm -rf lib meridian mnt User .DS_Store ._.DS_Store .cydia_no_stash .fseventsd .meridian_installed
 cd /mnt1/Applications && rm -rf Cydia.app Filza.app MTerminal.app
 cd /mnt1/Library && rm -rf Frameworks LaunchDaemons MobileSubstrate PreferenceBundles PreferenceLoader Switches dpkg
 cd /mnt1/System/Library && rm -rf PreferenceBundles/AppList.bundle

@@ -1,6 +1,6 @@
-# Tested on iPhone SE (9.3) with kok3shi9 jailbreak, run this script on normal mode
+# Tested on iPod Touch 6 (9.2), iPhone SE (9.3) with kok3shi9 jailbreak, run this script on normal mode
 
-cd / && rm -rf ./--early-boot .cydia_no_stash .installed_kok3shi User boot lib mnt untether
+cd / && rm -rf ./--early-boot .cydia_no_stash .fseventsd .installed_kok3shi User boot lib mnt untether
 cd /Applications && rm -rf Cydia.app Filza.app MTerminal.app SpringtomizeApp.app
 cd /Library && rm -rf Frameworks LaunchDaemons MobileSubstrate PreferenceBundles PreferenceLoader Switches
 cd /System/Library && rm -rf "Internet Plug-Ins" KeyboardDictionaries PreferenceBundles/AppList.bundle

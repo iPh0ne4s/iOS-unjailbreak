@@ -1,7 +1,7 @@
 # Tested on iPhone 5s (10.3.3) with TotallyNotSpyware jailbreak and Meridian option, run this script on normal mode
 # Might work on 10.0-10.2.1, untested
 
-cd / && rm -rf lib meridian mnt User .DS_Store ._.DS_Store .cydia_no_stash .meridian_installed
+cd / && rm -rf lib meridian mnt User .DS_Store ._.DS_Store .cydia_no_stash .fseventsd .meridian_installed
 cd /Applications && rm -rf Cydia.app Filza.app MTerminal.app
 cd /Library && rm -rf Frameworks LaunchDaemons MobileSubstrate PreferenceBundles PreferenceLoader Switches dpkg
 cd /System/Library && rm -rf PreferenceBundles/AppList.bundle
