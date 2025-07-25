@@ -1,4 +1,4 @@
-# Tested on iPod Touch 6 (9.2), iPhone SE (9.3) with kok3shi9 jailbreak, run this script on normal mode
+# Tested on iPod Touch 6 (9.2), iPhone SE (9.3) with kok3shi9 jailbreak, run this script on SSH ramdisk mode
 
 cd /mnt1 && rm -rf ./--early-boot .cydia_no_stash .fseventsd .installed_kok3shi User boot lib mnt untether
 cd /mnt1/Applications && rm -rf Cydia.app Filza.app MTerminal.app SpringtomizeApp.app
