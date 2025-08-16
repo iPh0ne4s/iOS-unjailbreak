@@ -3,9 +3,9 @@
 - Uninstall as many packages in cydia as possible but keep OpenSSH, install it if previously not installed
 - Use [Legacy-iOS-Kit](https://github.com/LukeZGD/Legacy-iOS-Kit) to SSH into device (Data Management, Connect to SSH)
 - Use FileZilla to access device, default is sftp://127.0.0.1, root, alpine, 6414
-- Check the size of `/private/etc/fstab`, if it's 67 bytes, replace with `fstab_80` (rename to `fstab`, of course), if it's 129 bytes, replace with `fstab_155`
-- Replace `/usr/libexec/installd`, `/usr/libexec/lsd`, `/usr/libexec/neagent` respectively with provided `installd`, `lsd`, `neagent` in the folder of device's version, set 0755 permission for all
+- Check the size of `/private/etc/fstab`, if it's smaller than 80 bytes (generally 67), replace with `fstab` in fstab80 folder, if it's larger than 80 bytes (generally 129), replace with `fstab` in fstab155 folder
+- Replace `/usr/libexec/installd`, `/usr/libexec/lsd`, `/usr/libexec/neagent` respectively with `installd`, `lsd`, `neagent` in installd, lsd, neagent folders of device's version, set 0755 permission for all
 - `/System/Library/Caches/com.apple.dyld/dyld_shared_cache_arm64` has been modified while there seems to be nothing wrong without restoring it. Being too large to upload, it can be obtained from the .ipsw file of device's model and version
 - Copy `9.0-9.1_Pangu9.sh` to device, in my case it is copied to /private/var/tmp, set 777 permission
 - Run `/private/var/tmp/*.sh` (or whatever the path is) in Legacy-iOS-Kit's terminal
-- If the device is activatable (FMI off, working baseband), it is recommended to erase device afterwards
+- Do not erase the device unless everything is done correctly and the device is activatable (FMI off, working baseband)

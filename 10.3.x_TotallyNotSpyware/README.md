@@ -7,7 +7,7 @@ Generally only one of these two scripts needs to be executed
 - Use FileZilla to access device, default is sftp://127.0.0.1, root, alpine, 6414
 - Copy `10.3.x_TotallyNotSpyware_normal.sh` to device, in my case it is copied to /private/var/tmp, set 777 permission
 - Run `/private/var/tmp/*.sh` (or whatever the path is) in Legacy-iOS-Kit's terminal
-- If the device is activatable (FMI off, working baseband), it is recommended to erase device afterwards
+- Do not erase the device unless everything is done correctly and the device is activatable (FMI off, working baseband)
 ### 10.3.x_TotallyNotSpyware_ramdisk.sh
 - `10.3.x_TotallyNotSpyware_ramdisk.sh` is supposed to be executed in SSH ramdisk mode
 - Uninstall as many packages in cydia as possible
@@ -18,4 +18,4 @@ Generally only one of these two scripts needs to be executed
 - Copy `10.3.x_TotallyNotSpyware_ramdisk.sh` to device, in my case it is copied to /mnt1, set 777 permission
 - Run `/mnt1/*.sh` (or whatever the path is) in Legacy-iOS-Kit's or SSHRD_Script's terminal
 - Run `/sbin/reboot` to reboot
-- If the device is activatable (FMI off, working baseband), it is recommended to erase device afterwards
+- Do not erase the device unless everything is done correctly and the device is activatable (FMI off, working baseband)

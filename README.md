@@ -1,5 +1,5 @@
 # Scripts to unjailbreak 64-bit iOS 7-10 devices
-**Warning: DO NOT proceed if you don't know what you are doing!**
+**Warning: There is a high chance of bootlooping, DO NOT proceed if you don't know what you are doing!**
 - Although these scripts successfully removed jailbreak on my devices, it is quite risky to unjailbreak in this way (for me it's because cydia eraser sucks) and there are no warranties, use at your own risk
 - Pay attention to system version, jailbreak tool, device mode (normal mode or SSH ramdisk mode)
 - I didn't install many packages when testing, mainly Filza, MTerminal, Springtomize. It is unlikely to work perfectly when restoring /usr/bin, /usr/lib, /usr/libexec, /usr/sbin, etc., or if you directly modified system files
