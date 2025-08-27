@@ -1,5 +1,5 @@
 ## Usage
-Generally only one of these two scripts needs to be executed
+Works on [original TotallyNotSpyware](https://totally.not.spyware.lol/) and [LukeZGD's TNS Sockport](https://lukezgd.github.io/tns-sockport/). Generally only one of these two scripts needs to be executed
 ### 10.3.x_TotallyNotSpyware_normal.sh
 - `10.3.x_TotallyNotSpyware_normal.sh` is supposed to be executed in normal mode
 - Uninstall as many packages in cydia as possible but keep OpenSSH, install it if previously not installed
