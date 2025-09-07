@@ -16,7 +16,7 @@
 - Use [Legacy-iOS-Kit](https://github.com/LukeZGD/Legacy-iOS-Kit) or [SSHRD_Script](https://github.com/verygenericname/SSHRD_Script) to boot SSH ramdisk and SSH into device
 - Run `/sbin/mount_hfs /dev/disk0s1s1 /mnt1` to mount system partition
 - Use FileZilla to access device, default is sftp://127.0.0.1, root, alpine, 6414. Change 6414 to 2222 if using SSHRD_Script
-- Replace `/usr/libexec/installd` and `/usr/libexec/lsd` respectively with `installd` and `lsd` in 8.x/installd and 8.x/lsd folders of device's version, set 0755 permission for both
+- Replace `/mnt1/usr/libexec/installd` and `/mnt1/usr/libexec/lsd` respectively with `installd` and `lsd` in 8.x/installd and 8.x/lsd folders of device's version, set 0755 permission for both
 - Copy `8.x_wtfis_ramdisk.sh` to device, in my case it is copied to /mnt1, set 777 permission
 - Run `/mnt1/*.sh` (or whatever the path is) in Legacy-iOS-Kit's or SSHRD_Script's terminal
 - Run `/sbin/reboot` to reboot
